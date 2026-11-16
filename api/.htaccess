@@ -1,0 +1,25 @@
+# Enterprise Security .htaccess Rules for Hostinger Apache Server
+
+# Disable Directory Browsing
+Options -Indexes
+
+# Block access to sensitive files and scripts
+<FilesMatch "(\.(sql|env|log|bak|config|ini|sh|json|lock)|^\.|\.ht_config\.php$|probe_.*\.php$|migrate\.php$|db_importer\.php$)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# HTTP Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+# Pass HTTP Authorization header to PHP
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP:Authorization} ^(.*)
+    RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+</IfModule>
+

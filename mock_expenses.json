@@ -1,0 +1,15 @@
+[
+  {
+    "id": "9712cda9-4de1-432d-82f9-4dd66b4df856",
+    "user_id": "0001",
+    "category": "Staff Salary",
+    "title": "Monthly Staff Salary - Ramu Kaka",
+    "staff_name": "Ramu Kaka",
+    "salary_month": "August 2026",
+    "amount": "4500.00",
+    "expense_date": "2026-08-22",
+    "payment_method": "Cash",
+    "notes": "Controlled Staff Salary Payment Test",
+    "created_at": "2026-09-06 16:24:06"
+  }
+]

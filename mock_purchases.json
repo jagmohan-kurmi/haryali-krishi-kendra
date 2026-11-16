@@ -1,0 +1,168 @@
+[
+  {
+    "id": "d52a5679-5f2f-41f0-bf39-f4b3aaf324a1",
+    "user_id": "0001",
+    "invoice_number": "P-0007",
+    "supplier_id": "efd96ae7-8cc1-42e0-98c8-75be10f962c9",
+    "purchase_date": "2026-08-22",
+    "total_amount": "1500.00",
+    "paid_amount": "1000.00",
+    "payment_method": "Bank Transfer",
+    "due_date": null,
+    "notes": "Controlled Inward Stock Purchase Test",
+    "status": "Partial",
+    "created_at": "2026-09-06 16:24:06",
+    "supplier_name": "Madhya Pradesh Seed Corp",
+    "supplier_mobile": "9826012345",
+    "purchase_items": [
+      {
+        "id": "e4a5114c-26ac-4375-ac1e-1c32c06335b5",
+        "user_id": "0001",
+        "purchase_id": "d52a5679-5f2f-41f0-bf39-f4b3aaf324a1",
+        "product_id": "c95648ec-03a6-468a-bb9d-dcc46fe3ceec",
+        "quantity": "10.00",
+        "unit": "Packet",
+        "purchase_rate": "150.00",
+        "total": "1500.00",
+        "created_at": "2026-09-06 16:24:06",
+        "product_name": "Super Bio Zinc 500g",
+        "category": "Bio-Stimulants",
+        "brand": "BioCrop India",
+        "batch_number": "BZ-2026-08",
+        "expiry_date": "2028-01-10",
+        "gst_rate": "0.00",
+        "sku": "ZINC-500",
+        "product": {
+          "id": "c95648ec-03a6-468a-bb9d-dcc46fe3ceec",
+          "name": "Super Bio Zinc 500g",
+          "sku": "ZINC-500",
+          "category": "Bio-Stimulants",
+          "brand": "BioCrop India",
+          "batch_number": "BZ-2026-08",
+          "expiry_date": "2028-01-10",
+          "gst_rate": 0,
+          "hsn_code": null
+        }
+      }
+    ],
+    "purchase_payments": [
+      {
+        "id": "ad2a8966-1060-46d9-aba6-4f19151f1a39",
+        "user_id": "0001",
+        "purchase_id": "d52a5679-5f2f-41f0-bf39-f4b3aaf324a1",
+        "supplier_id": "efd96ae7-8cc1-42e0-98c8-75be10f962c9",
+        "amount": "1000.00",
+        "payment_method": "Bank Transfer",
+        "payment_date": "2026-08-22",
+        "notes": "Payment for Purchase Invoice P-0007",
+        "created_at": "2026-09-06 16:24:06"
+      }
+    ],
+    "supplier_returns": [],
+    "returned_amount": 0,
+    "net_amount": 1500
+  },
+  {
+    "id": "116a2451-71d2-43f8-ba22-c19134399017",
+    "user_id": "0001",
+    "invoice_number": "P-0001",
+    "supplier_id": "b7ad3c66-90cf-4a2f-8c45-1dc5e2234e0a",
+    "purchase_date": "2026-06-30",
+    "total_amount": "318333.80",
+    "paid_amount": "308334.00",
+    "payment_method": "Cash",
+    "due_date": "2026-10-06",
+    "notes": "Gemini AI Invoice Import (Invoice #GSI/19/FY2701716)",
+    "status": "Partial",
+    "created_at": "2026-09-06 06:54:09",
+    "supplier_name": "Parijat Industries (India) Limited",
+    "supplier_mobile": "N/A",
+    "purchase_items": [
+      {
+        "id": "72e03b10-b4b6-42e5-8611-3a37a9eb6d9d",
+        "user_id": "0001",
+        "purchase_id": "116a2451-71d2-43f8-ba22-c19134399017",
+        "product_id": "372e5a48-121f-4645-9839-5ee311df51c9",
+        "quantity": "120.00",
+        "unit": "Litre",
+        "purchase_rate": "1900.00",
+        "total": "269040.00",
+        "created_at": "2026-09-06 06:54:09",
+        "product_name": "Metamifop 8% + Imazethapyr 4% + Imazamox 3% ME 15x400 ML (Vostrix)",
+        "category": "Pesticides",
+        "brand": "Parijat Industries (India) Limited",
+        "batch_number": "C426F26027",
+        "expiry_date": "2028-06-02",
+        "gst_rate": "18.00",
+        "sku": "HSN-38089350",
+        "product": {
+          "id": "372e5a48-121f-4645-9839-5ee311df51c9",
+          "name": "Metamifop 8% + Imazethapyr 4% + Imazamox 3% ME 15x400 ML (Vostrix)",
+          "sku": "HSN-38089350",
+          "category": "Pesticides",
+          "brand": "Parijat Industries (India) Limited",
+          "batch_number": "C426F26027",
+          "expiry_date": "2028-06-02",
+          "gst_rate": 18,
+          "hsn_code": null
+        }
+      },
+      {
+        "id": "f3596158-6073-491e-950f-955edd139c0b",
+        "user_id": "0001",
+        "purchase_id": "116a2451-71d2-43f8-ba22-c19134399017",
+        "product_id": "9488e6fc-c775-4293-b466-1373ec7457f2",
+        "quantity": "24.00",
+        "unit": "Litre",
+        "purchase_rate": "1970.00",
+        "total": "55790.40",
+        "created_at": "2026-09-06 06:54:09",
+        "product_name": "Metamifop 8% + Imazethapyr 4% + Imazamox 3% ME 6x1 Ltr (Vostrix)",
+        "category": "Pesticides",
+        "brand": "Parijat Industries (India) Limited",
+        "batch_number": "C426F26029",
+        "expiry_date": "2028-06-03",
+        "gst_rate": "18.00",
+        "sku": "HSN-38089350",
+        "product": {
+          "id": "9488e6fc-c775-4293-b466-1373ec7457f2",
+          "name": "Metamifop 8% + Imazethapyr 4% + Imazamox 3% ME 6x1 Ltr (Vostrix)",
+          "sku": "HSN-38089350",
+          "category": "Pesticides",
+          "brand": "Parijat Industries (India) Limited",
+          "batch_number": "C426F26029",
+          "expiry_date": "2028-06-03",
+          "gst_rate": 18,
+          "hsn_code": null
+        }
+      }
+    ],
+    "purchase_payments": [
+      {
+        "id": "6833ae5f-cc0a-4d1e-96e1-f68f4e98404c",
+        "user_id": "0001",
+        "purchase_id": "116a2451-71d2-43f8-ba22-c19134399017",
+        "supplier_id": "b7ad3c66-90cf-4a2f-8c45-1dc5e2234e0a",
+        "amount": "300000.00",
+        "payment_method": "Cash",
+        "payment_date": "2026-06-30",
+        "notes": "Payment for Purchase Invoice P-0001",
+        "created_at": "2026-09-06 06:54:09"
+      },
+      {
+        "id": "d014e1ba-4a53-4f49-a52a-ea7ff96c7143",
+        "user_id": "0001",
+        "purchase_id": "116a2451-71d2-43f8-ba22-c19134399017",
+        "supplier_id": "b7ad3c66-90cf-4a2f-8c45-1dc5e2234e0a",
+        "amount": "8334.00",
+        "payment_method": "Cash",
+        "payment_date": "2026-09-06",
+        "notes": "Payment for Purchase Invoice P-0001",
+        "created_at": "2026-09-06 06:55:32"
+      }
+    ],
+    "supplier_returns": [],
+    "returned_amount": 0,
+    "net_amount": 318333.8
+  }
+]

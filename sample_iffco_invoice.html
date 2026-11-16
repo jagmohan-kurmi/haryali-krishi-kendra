@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  <meta charset="UTF-8">
+  <title>सप्लायर बिल - IFFCO & Bayer CropScience</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f8; margin: 0; padding: 20px; color: #1a202c; }
+    .invoice-card { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 2px solid #047857; }
+    .header { display: flex; justify-content: space-between; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; }
+    .logo-text { font-size: 24px; font-weight: bold; color: #047857; }
+    .sub-text { font-size: 12px; color: #64748b; }
+    .bill-info { display: grid; grid-template-cols: 1fr 1fr; gap: 15px; background: #f8fafc; padding: 15px; border-radius: 12px; font-size: 13px; margin-bottom: 20px; border: 1px solid #cbd5e1; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 13px; }
+    th { background: #047857; color: white; text-align: left; padding: 10px; border-radius: 4px; }
+    td { padding: 10px; border-bottom: 1px solid #e2e8f0; }
+    .total-box { text-align: right; font-size: 18px; font-weight: bold; color: #047857; padding: 15px; background: #ecfdf5; border-radius: 12px; border: 1px solid #a7f3d0; }
+    .print-btn { display: inline-block; background: #047857; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-bottom: 15px;">
+    <button onclick="window.print()" className="print-btn" style="background:#047857; color:white; padding:10px 20px; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+      🖨️ इस बिल को PDF के रूप में सेव करें (Save as PDF)
+    </button>
+  </div>
+
+  <div class="invoice-card">
+    <div class="header">
+      <div>
+        <div class="logo-text">इफ्को खाद एवं कीटनाशक डिस्ट्रीब्यूटर</div>
+        <div class="sub-text">IFFCO Fertilizers & Bayer Agricultural Supplies Ltd.</div>
+        <div class="sub-text">मुख्य मंडी रोड, दमोह (म.प्र.) • GSTIN: 23AAACI1982K1Z8</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 18px; font-weight: bold; color: #b45309;">TAX INVOICE / सप्लायर बिल</div>
+        <div class="sub-text">मूल प्रति (Original Copy)</div>
+      </div>
+    </div>
+
+    <div class="bill-info">
+      <div>
+        <strong>सप्लायर नाम:</strong> इफ्को उर्वरक डिस्ट्रीब्यूटर (IFFCO Ltd)<br>
+        <strong>इनवॉइस नंबर:</strong> IFFCO-DAMOH-2026-984<br>
+        <strong>दिनांक (Date):</strong> 19/08/2026
+      </div>
+      <div>
+        <strong>क्रेता दुकान (Billed To):</strong> राजपूत कृषि सेवा केंद्र पटेरा<br>
+        <strong>पता:</strong> चोपड़ा रोड, पटेरा (दमोह म.प्र.)<br>
+        <strong>भुगतान की अंतिम तिथि (Due Date):</strong> 18/09/2026
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>क्र.</th>
+          <th>सामग्री / उत्पाद का नाम</th>
+          <th>बैच नंबर</th>
+          <th>एक्सपायरी डेट</th>
+          <th>मात्रा (Qty)</th>
+          <th>खरीद दर (₹)</th>
+          <th style="text-align: right;">कुल (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>यूरिया (IFFCO Neem Coated Urea 45kg Bag)</strong></td>
+          <td>BCH-2026-99</td>
+          <td>31/12/2028</td>
+          <td>50 बैग</td>
+          <td>₹266.50</td>
+          <td style="text-align: right;"><strong>₹13,325.00</strong></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>DAP खाद (18:46:0 50kg Bag)</strong></td>
+          <td>DAP-8841</td>
+          <td>30/06/2028</td>
+          <td>30 बैग</td>
+          <td>₹1,350.00</td>
+          <td style="text-align: right;"><strong>₹40,500.00</strong></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>कोरोजन कीटनाशक (Coragen Insecticide 150ml)</strong></td>
+          <td>CRG-902</td>
+          <td>15/10/2027</td>
+          <td>15 बॉटल</td>
+          <td>₹1,850.00</td>
+          <td style="text-align: right;"><strong>₹27,750.00</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="total-box">
+      कुल बिल राशि (Grand Total): ₹81,575.00
+    </div>
+
+    <div style="margin-top: 30px; font-size: 11px; color: #64748b; display: flex; justify-between;">
+      <div>* यह कंप्यूटर जनरेटेड आधिकारिक टैक्स इनवॉइस है।</div>
+      <div style="text-align: right;">अधिकृत हस्ताक्षरकर्ता (IFFCO Distributor)</div>
+    </div>
+  </div>
+</body>
+</html>

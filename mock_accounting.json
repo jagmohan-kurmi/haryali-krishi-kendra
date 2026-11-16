@@ -1,0 +1,92 @@
+[
+  {
+    "id": "acc-1010",
+    "user_id": "0001",
+    "account_code": "1010",
+    "account_name": "Cash in Hand (नकद रोकड़)",
+    "category": "ASSET",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-1020",
+    "user_id": "0001",
+    "account_code": "1020",
+    "account_name": "Bank Account (बैंक खाता / UPI)",
+    "category": "ASSET",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-1030",
+    "user_id": "0001",
+    "account_code": "1030",
+    "account_name": "Accounts Receivable (किसान उधारी / Farmer Khata)",
+    "category": "ASSET",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-1040",
+    "user_id": "0001",
+    "account_code": "1040",
+    "account_name": "Inventory Stock Asset (स्टॉक संपत्ति)",
+    "category": "ASSET",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-2010",
+    "user_id": "0001",
+    "account_code": "2010",
+    "account_name": "Accounts Payable (सप्लायर देनदारी)",
+    "category": "LIABILITY",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-4010",
+    "user_id": "0001",
+    "account_code": "4010",
+    "account_name": "Sales Income (खाद-बीज बिक्री आय)",
+    "category": "INCOME",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-5010",
+    "user_id": "0001",
+    "account_code": "5010",
+    "account_name": "Cost of Goods Sold - COGS (बिके माल की लागत)",
+    "category": "EXPENSE",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-5020",
+    "user_id": "0001",
+    "account_code": "5020",
+    "account_name": "Shop Expenses (दुकान खर्च)",
+    "category": "EXPENSE",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  },
+  {
+    "id": "acc-5030",
+    "user_id": "0001",
+    "account_code": "5030",
+    "account_name": "Staff Salary Expense (कर्मचारी वेतन खर्च)",
+    "category": "EXPENSE",
+    "opening_balance": "0.00",
+    "is_system": 1,
+    "created_at": "2026-08-22 08:41:34"
+  }
+]

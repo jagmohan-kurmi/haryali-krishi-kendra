@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>टैक्स इनवॉइस / बिल - हरियाली कृषि केंद्र पटेरा (Hariyali Krishi Kendra)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #047857;
+      --primary-dark: #065f46;
+      --primary-light: #ecfdf5;
+      --accent: #b45309;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #cbd5e1;
+      --bg: #f8fafc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Hind', 'Plus Jakarta Sans', sans-serif; background-color: #f1f5f9; color: var(--text); padding: 20px; line-height: 1.5; }
+
+    .no-print-bar {
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-whatsapp { background: #25D366; color: white; }
+    .btn-whatsapp:hover { background: #1ebc59; }
+    .btn-outline { background: white; border: 1px solid var(--border); color: var(--text); }
+    .btn-outline:hover { background: var(--bg); }
+
+    .invoice-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 35px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 2px solid var(--primary);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .store-brand { display: flex; align-items: center; gap: 15px; }
+    .store-logo { width: 70px; height: 70px; border-radius: 12px; object-fit: cover; border: 2px solid var(--primary); }
+    .store-title { font-size: 26px; font-weight: 800; color: var(--primary); }
+    .store-tagline { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+    .store-gst { font-size: 12px; font-weight: 700; color: #334155; margin-top: 4px; }
+
+    .invoice-badge-box { text-align: right; }
+    .invoice-title { font-size: 20px; font-weight: 800; color: var(--accent); }
+    .invoice-copy { font-size: 12px; color: var(--text-muted); }
+
+    .grid-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      background: var(--bg);
+      padding: 18px 20px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+    .info-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-row { display: flex; align-items: center; gap: 8px; }
+    .form-row label { font-weight: 600; min-width: 110px; color: #475569; }
+    .form-input {
+      flex: 1;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: inherit;
+      background: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 13.5px;
+    }
+    th {
+      background: var(--primary);
+      color: white;
+      text-align: left;
+      padding: 10px 12px;
+      font-weight: 600;
+    }
+    th:first-child { border-top-left-radius: 8px; }
+    th:last-child { border-top-right-radius: 8px; text-align: right; }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: middle;
+    }
+    tr:hover td { background-color: #f8fafc; }
+
+    .table-input {
+      width: 100%;
+      padding: 6px 8px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: inherit;
+    }
+    .qty-input, .price-input { text-align: right; font-weight: 600; }
+    .item-total { font-weight: 700; color: var(--primary); text-align: right; }
+    .btn-del {
+      background: #fee2e2;
+      color: #dc2626;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .add-row-bar { margin-bottom: 25px; }
+
+    .calc-summary {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .terms-box {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.6;
+      border: 1px dashed #cbd5e1;
+      padding: 15px;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .totals-table { width: 100%; font-size: 14px; }
+    .totals-table td { padding: 8px 12px; border: none; }
+    .totals-table .total-label { color: #475569; font-weight: 600; }
+    .totals-table .total-val { text-align: right; font-weight: 700; color: #1e293b; }
+    .grand-total-row td {
+      background: var(--primary-light);
+      border-top: 2px solid var(--primary) !important;
+      border-bottom: 2px solid var(--primary) !important;
+      color: var(--primary);
+      font-size: 18px;
+      font-weight: 800;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .signature-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+    }
+    .signature-box { text-align: center; }
+    .sig-img { max-height: 55px; margin-bottom: 5px; }
+
+    /* PRINT STYLES - A4 Clean Sheet */
+    @media print {
+      body { background: white; padding: 0; }
+      .no-print-bar, .btn-del, .add-row-bar { display: none !important; }
+      .invoice-container { box-shadow: none; border: 1px solid #000; border-radius: 0; padding: 20px; }
+      .form-input, .table-input { border: none; background: transparent; padding: 0; }
+      th { background: #047857 !important; color: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .grand-total-row td { background: #ecfdf5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Controls Bar (Hidden during Print) -->
+  <div class="no-print-bar">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <a href="admin.html" class="btn btn-primary" style="background:#065f46;">⬅️ स्टोर एडमिन ERP</a>
+      <a href="index.html" class="btn btn-outline">🌐 मुख्य पोर्टल</a>
+      <span style="font-size:13px; color:var(--text-muted);">हरियाली कृषि केंद्र बिलिंग सॉफ्टवेयर v2.4</span>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <button onclick="shareWhatsApp()" class="btn btn-whatsapp">📱 WhatsApp पर बिल भेजें</button>
+      <button onclick="window.print()" class="btn btn-primary">🖨️ प्रिंट करें / PDF सेव करें</button>
+    </div>
+  </div>
+
+  <!-- Printable Invoice Document -->
+  <div class="invoice-container" id="printableInvoice">
+    <!-- Header -->
+    <div class="header">
+      <div class="store-brand">
+        <img src="assets/images/logo.jpg" alt="Logo" class="store-logo" onerror="this.style.display='none'">
+        <div>
+          <div class="store-title">हरियाली कृषि केंद्र पटेरा</div>
+          <div class="store-tagline">Hariyali Krishi Agri Solutions • इफ्को खाद, प्रमाणित बीज, कीटनाशक एवं कृषि उपकरण विक्रेता</div>
+          <div class="store-gst">Patera, Madhya Pradesh 470772 • फोन: +91 62610 26021 • GSTIN: 23GEGPK9903G1ZF</div>
+        </div>
+      </div>
+      <div class="invoice-badge-box">
+        <div class="invoice-title">TAX INVOICE / किसान बिल</div>
+        <div class="invoice-copy">मूल प्रति (Original Customer Copy)</div>
+      </div>
+    </div>
+
+    <!-- Bill & Farmer Info -->
+    <div class="grid-info">
+      <div class="info-group">
+        <div class="form-row">
+          <label>बिल नंबर (Inv No):</label>
+          <input type="text" id="invNumber" class="form-input" value="HKK-2026-108">
+        </div>
+        <div class="form-row">
+          <label>बिल दिनांक (Date):</label>
+          <input type="date" id="invDate" class="form-input">
+        </div>
+        <div class="form-row">
+          <label>भुगतान माध्यम:</label>
+          <select id="paymentMethod" class="form-input">
+            <option value="नकद (Cash)">नकद (Cash)</option>
+            <option value="UPI / PhonePe">UPI / PhonePe / GPay</option>
+            <option value="उधार (Credit / Khata)">उधार (Credit / Khata)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="info-group">
+        <div class="form-row">
+          <label>किसान का नाम:</label>
+          <input type="text" id="farmerName" class="form-input" value="रामेश्वर पटेल (Rameshwar Patel)" placeholder="किसान का नाम">
+        </div>
+        <div class="form-row">
+          <label>मोबाइल नंबर:</label>
+          <input type="tel" id="farmerMobile" class="form-input" value="9876543210" placeholder="10 अंकों का मोबाइल">
+        </div>
+        <div class="form-row">
+          <label>गाँव / पता:</label>
+          <input type="text" id="farmerAddress" class="form-input" value="ग्राम-राजाबंदी, पटेरा" placeholder="गाँव या पता">
+        </div>
+      </div>
+    </div>
+
+    <!-- Items Table -->
+    <table id="invoiceTable">
+      <thead>
+        <tr>
+          <th style="width: 5%;">क्र.</th>
+          <th style="width: 45%;">सामग्री / उत्पाद का नाम (Product Name)</th>
+          <th style="width: 15%;">बैच नंबर</th>
+          <th style="width: 12%; text-align:right;">मात्रा (Qty)</th>
+          <th style="width: 13%; text-align:right;">दर (₹ Rate)</th>
+          <th style="width: 15%;">कुल (₹ Total)</th>
+          <th style="width: 5%;" class="no-print-col"></th>
+        </tr>
+      </thead>
+      <tbody id="invoiceItems">
+        <!-- Row 1 -->
+        <tr>
+          <td class="row-index">1</td>
+          <td>
+            <input type="text" class="table-input" value="यूरिया खाद (IFFCO Neem Coated Urea 45kg Bag)" list="productList">
+          </td>
+          <td><input type="text" class="table-input" value="BCH-9921"></td>
+          <td><input type="number" class="table-input qty-input" value="10" min="1" oninput="recalc()"></td>
+          <td><input type="number" class="table-input price-input" value="266.50" step="0.5" oninput="recalc()"></td>
+          <td class="item-total">₹2,665.00</td>
+          <td class="no-print-col"><button onclick="deleteRow(this)" class="btn-del">✕</button></td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+          <td class="row-index">2</td>
+          <td>
+            <input type="text" class="table-input" value="DAP खाद (IFFCO DAP 18:46:0 50kg Bag)" list="productList">
+          </td>
+          <td><input type="text" class="table-input" value="DAP-8841"></td>
+          <td><input type="number" class="table-input qty-input" value="4" min="1" oninput="recalc()"></td>
+          <td><input type="number" class="table-input price-input" value="1350.00" step="1" oninput="recalc()"></td>
+          <td class="item-total">₹5,400.00</td>
+          <td class="no-print-col"><button onclick="deleteRow(this)" class="btn-del">✕</button></td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+          <td class="row-index">3</td>
+          <td>
+            <input type="text" class="table-input" value="लोकवन (C-306) प्रमाणित शरबती गेहूँ बीज 40kg" list="productList">
+          </td>
+          <td><input type="text" class="table-input" value="LOK-2026"></td>
+          <td><input type="number" class="table-input qty-input" value="2" min="1" oninput="recalc()"></td>
+          <td><input type="number" class="table-input price-input" value="1950.00" step="1" oninput="recalc()"></td>
+          <td class="item-total">₹3,900.00</td>
+          <td class="no-print-col"><button onclick="deleteRow(this)" class="btn-del">✕</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <datalist id="productList">
+      <option value="यूरिया खाद (IFFCO Neem Coated Urea 45kg Bag)">
+      <option value="DAP खाद (IFFCO DAP 18:46:0 50kg Bag)">
+      <option value="NPK खाद (IFFCO 12:32:16 50kg Bag)">
+      <option value="महाधन NPK 19:19:19 1kg घुलनशील">
+      <option value="लोकवन (C-306) प्रमाणित शरबती गेहूँ बीज 40kg">
+      <option value="कोरोजन कीटनाशक (Coragen FMC 150ml)">
+      <option value="सल्फर 90% WDG 3kg Bag">
+      <option value="साइपरमेथ्रिन 10% EC 1 Litre">
+    </datalist>
+
+    <div class="add-row-bar">
+      <button onclick="addRow()" class="btn btn-outline" style="border-style:dashed; width:100%; justify-content:center;">
+        ➕ नया उत्पाद जोड़ें (Add Item)
+      </button>
+    </div>
+
+    <!-- Summary & Totals -->
+    <div class="calc-summary">
+      <div class="terms-box">
+        <strong>नियम व शर्तें:</strong><br>
+        1. 100% असली व सरकारी मान्यता प्राप्त खाद व बीज।<br>
+        2. बिका हुआ माल बिल के साथ 7 दिनों में सुरक्षित स्थिति में वापस लिया जाएगा।<br>
+        3. सभी उर्वरक भारत सरकार की सब्सिडी गाइडलाइंस अनुसार वितरित किए गए हैं।<br>
+        <span id="wordsTotal" style="display:block; margin-top:8px; font-weight:bold; color:var(--primary);"></span>
+      </div>
+
+      <div>
+        <table class="totals-table">
+          <tr>
+            <td class="total-label">उप-कुल (Subtotal):</td>
+            <td class="total-val" id="lblSubtotal">₹11,965.00</td>
+          </tr>
+          <tr>
+            <td class="total-label">छूट (Discount):</td>
+            <td class="total-val">
+              <input type="number" id="discountInput" class="table-input qty-input" value="0" style="width:90px;" oninput="recalc()">
+            </td>
+          </tr>
+          <tr>
+            <td class="total-label">CGST (2.5%):</td>
+            <td class="total-val" id="lblCgst">₹0.00</td>
+          </tr>
+          <tr>
+            <td class="total-label">SGST (2.5%):</td>
+            <td class="total-val" id="lblSgst">₹0.00</td>
+          </tr>
+          <tr class="grand-total-row">
+            <td>कुल देय राशि (Grand Total):</td>
+            <td style="text-align:right;" id="lblGrandTotal">₹11,965.00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Signatures -->
+    <div class="signature-section">
+      <div>
+        <div style="font-size:12px; color:#64748b;">* यह कंप्यूटर जनरेटेड पक्का बिल है।</div>
+        <div style="font-size:12px; font-weight:600; color:#334155; margin-top:5px;">किसान के हस्ताक्षर</div>
+      </div>
+      <div class="signature-box">
+        <img src="assets/images/signature.png" alt="Signature" class="sig-img" onerror="this.style.display='none'">
+        <div style="font-size:13px; font-weight:700; color:var(--primary);">हरियाली कृषि केंद्र</div>
+        <div style="font-size:11px; color:#64748b;">अधिकृत हस्ताक्षरकर्ता (Authorized Signatory)</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set today's date
+    document.getElementById('invDate').value = new Date().toISOString().split('T')[0];
+
+    function recalc() {
+      const rows = document.querySelectorAll('#invoiceItems tr');
+      let subtotal = 0;
+
+      rows.forEach((row, idx) => {
+        row.querySelector('.row-index').innerText = idx + 1;
+        const qty = parseFloat(row.querySelector('.qty-input').value) || 0;
+        const price = parseFloat(row.querySelector('.price-input').value) || 0;
+        const lineTotal = qty * price;
+        subtotal += lineTotal;
+        row.querySelector('.item-total').innerText = '₹' + lineTotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      });
+
+      const discount = parseFloat(document.getElementById('discountInput').value) || 0;
+      const taxable = Math.max(0, subtotal - discount);
+
+      // 5% Fertilizer GST breakup (included/displayed)
+      const cgst = (taxable * 0.025);
+      const sgst = (taxable * 0.025);
+      const grandTotal = Math.round(taxable);
+
+      document.getElementById('lblSubtotal').innerText = '₹' + subtotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('lblCgst').innerText = '₹' + cgst.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('lblSgst').innerText = '₹' + sgst.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('lblGrandTotal').innerText = '₹' + grandTotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('wordsTotal').innerText = 'शब्दों में: ' + inWords(grandTotal) + ' मात्र।';
+    }
+
+    function addRow() {
+      const tbody = document.getElementById('invoiceItems');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="row-index"></td>
+        <td><input type="text" class="table-input" placeholder="उत्पाद नाम दर्ज करें..." list="productList"></td>
+        <td><input type="text" class="table-input" value="BCH-${Math.floor(1000 + Math.random() * 9000)}"></td>
+        <td><input type="number" class="table-input qty-input" value="1" min="1" oninput="recalc()"></td>
+        <td><input type="number" class="table-input price-input" value="0" step="1" oninput="recalc()"></td>
+        <td class="item-total">₹0.00</td>
+        <td class="no-print-col"><button onclick="deleteRow(this)" class="btn-del">✕</button></td>
+      `;
+      tbody.appendChild(tr);
+      recalc();
+    }
+
+    function deleteRow(btn) {
+      const rows = document.querySelectorAll('#invoiceItems tr');
+      if (rows.length > 1) {
+        btn.closest('tr').remove();
+        recalc();
+      } else {
+        alert('बिल में कम से कम 1 सामग्री का होना अनिवार्य है।');
+      }
+    }
+
+    function shareWhatsApp() {
+      const farmer = document.getElementById('farmerName').value;
+      const invNum = document.getElementById('invNumber').value;
+      const date = document.getElementById('invDate').value;
+      const grandTotal = document.getElementById('lblGrandTotal').innerText;
+      const mobile = document.getElementById('farmerMobile').value;
+
+      const text = `*हरियाली कृषि केंद्र पटेरा (Hariyali Krishi Kendra)*%0A` +
+        `*टैक्स इनवॉइस बिल क्रमांक:* ${invNum}%0A` +
+        `*दिनांक:* ${date}%0A` +
+        `*किसान का नाम:* ${farmer}%0A` +
+        `*कुल बिल राशि:* ${grandTotal}%0A%0A` +
+        `धन्यवाद! बेहतर उत्पाद, बेहतर फसल, बेहतर भविष्य🌾%0A` +
+        `दुकान: Patera, Madhya Pradesh 470772%0A` +
+        `GSTIN: 23GEGPK9903G1ZF • हेल्पलाइन: +91 62610 26021%0A` +
+        `गूगल प्रोफाइल: https://share.google/1FEpTYPZOABbz85Vl`;
+
+      window.open(`https://wa.me/91${mobile}?text=${text}`, '_blank');
+    }
+
+    function inWords(num) {
+      const a = ['', 'एक', 'दो', 'तीन', 'चार', 'पांच', 'छह', 'सात', 'आठ', 'नौ', 'दस', 'ग्यारह', 'बारह', 'तेरह', 'चौदह', 'पंद्रह', 'सोलह', 'सत्रह', 'अठारह', 'उन्नीस'];
+      const b = ['', '', 'बीस', 'तीस', 'चालीस', 'पचास', 'साठ', 'सत्तर', 'अस्सी', 'नब्बे'];
+      if ((num = num.toString()).length > 9) return 'overflow';
+      let n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+      if (!n) return '';
+      let str = '';
+      str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + ' करोड़ ' : '';
+      str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + ' लाख ' : '';
+      str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + ' हज़ार ' : '';
+      str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + ' सौ ' : '';
+      str += (n[5] != 0) ? ((str != '') ? 'और ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + ' रुपये' : ' रुपये';
+      return str;
+    }
+
+    recalc();
+  </script>
+</body>
+</html>

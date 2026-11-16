@@ -1,0 +1,36 @@
+[
+  {
+    "id": "9aa42355-3832-493c-82e7-a4cae3274222",
+    "farmer_id": "RK-F-769953",
+    "user_id": "0001",
+    "name": "Ramesh Singh Patel",
+    "mobile": "9876543210",
+    "address": "Patera Village, MP",
+    "notes": "Testing Farmer Entry",
+    "opening_balance": "1500.00",
+    "total_purchases": "800.00",
+    "total_paid": "500.00",
+    "outstanding": "1800.00",
+    "created_at": "2026-09-06 16:24:05",
+    "overdue_penalty_enabled": 0,
+    "penalty_rate": "2.00",
+    "total_returns": "0.00"
+  },
+  {
+    "id": "30836867-b7f4-4669-939e-06a28dd502b2",
+    "farmer_id": "RK-F-000001",
+    "user_id": "0001",
+    "name": "Jagmohan Kurmi",
+    "mobile": "789654321",
+    "address": "rajabndi",
+    "notes": null,
+    "opening_balance": "0.00",
+    "total_purchases": "190000.00",
+    "total_paid": "190000.00",
+    "outstanding": "0.00",
+    "created_at": "2026-09-06 07:04:55",
+    "overdue_penalty_enabled": 1,
+    "penalty_rate": "2.00",
+    "total_returns": "0.00"
+  }
+]

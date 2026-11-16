@@ -1,0 +1,21 @@
+{
+  "name": "हरियाली कृषि केंद्र (Haryali Krishi Kendra)",
+  "short_name": "हरियाली कृषि",
+  "description": "सरकारी मान्यता प्राप्त बीज, इफ्को उर्वरक खाद, कीटनाशक व दैनिक मंडी भाव",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#047857",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

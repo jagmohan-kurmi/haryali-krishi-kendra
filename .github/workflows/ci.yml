@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Verify Web Assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify HTML & Datastores
+        run: |
+          test -f index.html
+          test -f admin.html
+          test -f billing_invoice.html
+          test -f server.js
+          echo "Hariyali Krishi Kendra core assets verified."
