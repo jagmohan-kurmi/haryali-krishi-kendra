@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // Production-grade Gemini Invoice Extraction Endpoint with Server Authentication & Cascading Fallback
 header('Content-Type: application/json; charset=utf-8');
 
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $testResult = $hasKey ? testGeminiConnection($apiKey) : ['pass' => false, 'http_status' => 0, 'gemini_error_message' => 'No API Key loaded'];
 
     echo json_encode([
-        'service' => 'Hariyali Krishi Kendra Admin ERP - GST Invoice Scanner',
+        'service' => 'Kisan Seva Krishi Kendra Admin ERP - GST Invoice Scanner',
         'status' => 'active',
         'gemini_api_key_configured' => $hasKey ? 'YES' : 'NO',
         'models' => [

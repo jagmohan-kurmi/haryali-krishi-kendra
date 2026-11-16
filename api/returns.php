@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 /**
  * Master Return Management System API
- * Rajput Krishi Sewa Kendra ERP
+ * Kisan Krishi Sewa Kendra ERP
  * Supports Customer Sales Returns (SR-00001) & Supplier Purchase Returns (PR-00001)
  */
 

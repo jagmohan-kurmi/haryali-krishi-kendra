@@ -1,4 +1,4 @@
-# PROJECT AUDIT: Hariyali Krishi Kendra - Agriculture Store & Billing Web App
+﻿# PROJECT AUDIT: Kisan Seva Krishi Kendra - Agriculture Store & Billing Web App
 
 **Date:** 2026-11-16  
 **Auditor:** Senior Open-Source Maintainer & DevSecOps Engineer  
@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary
 
-Hariyali Krishi Kendra is an agricultural retail, farmer billing, and inventory management web platform built for fertilizer, certified seed, and pesticide stores (Krishi Seva Kendras). It provides retail cash/credit invoicing, IFFCO fertilizer distribution records, live local mandi bhav tickers, farmer credit khata ledgers, and inventory reorder alerts.
+Kisan Seva Krishi Kendra is an agricultural retail, farmer billing, and inventory management web platform built for fertilizer, certified seed, and pesticide stores (Krishi Seva Kendras). It provides retail cash/credit invoicing, IFFCO fertilizer distribution records, live local mandi bhav tickers, farmer credit khata ledgers, and inventory reorder alerts.
 
 ---
 

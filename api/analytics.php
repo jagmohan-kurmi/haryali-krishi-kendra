@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 /**
  * AI Business Intelligence & ERP Analytics Engine
- * Rajput Krishi Sewa Kendra ERP
+ * Kisan Krishi Sewa Kendra ERP
  * Deterministic MySQL Analytics, Velocity, Stock Coverage, Margins & AI Advisor Insights
  */
 

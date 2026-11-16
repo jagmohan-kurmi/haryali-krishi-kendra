@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 /**
- * Rajput Krishi Sewa Kendra - PDF Viewer Endpoint
+ * Kisan Krishi Sewa Kendra - PDF Viewer Endpoint
  * Safely streams PDF documents inline to mobile and web browsers
  */
 

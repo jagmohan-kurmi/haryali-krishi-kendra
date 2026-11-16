@@ -1,6 +1,6 @@
--- ============================================================================
+﻿-- ============================================================================
 -- HOSTINGER MYSQL MIGRATION V2
--- PROJECT: Rajput Krishi Sewa Kendra ERP
+-- PROJECT: Kisan Krishi Sewa Kendra ERP
 -- FILE: public/api/migration_v2.sql
 -- DESCRIPTION: Customer Returns, Supplier Returns, Overdue Penalties & Schema Extensions
 -- ENGINE: InnoDB utf8mb4_unicode_ci

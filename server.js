@@ -211,7 +211,7 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   const url = `http://localhost:${PORT}`;
   console.log(`\n===============================================================`);
-  console.log(`  🌾 हरियाली कृषि केंद्र (Haryali Krishi Kendra)`);
+  console.log(`  🌾 किसान सेवा कृषि केंद्र (Haryali Krishi Kendra)`);
   console.log(`  100% Exact Full-Featured Production React ERP Server`);
   console.log(`===============================================================`);
   console.log(`  लोकल वेब लिंक: ${url}`);

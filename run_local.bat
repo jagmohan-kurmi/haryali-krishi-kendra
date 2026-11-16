@@ -1,9 +1,9 @@
-@echo off
-title Hariyali Krishi Kendra Patera - Local Server
+﻿@echo off
+title Kisan Seva Krishi Kendra - Local Server
 cd /d "%~dp0"
 chcp 65001 >nul
 echo ======================================================
-echo   🌾 हरियाली कृषि केंद्र पटेरा (Agri Solutions)
+echo   🌾 किसान सेवा कृषि केंद्र (Agri Solutions)
 echo ======================================================
 echo Starting local web server on port 5050...
 echo.

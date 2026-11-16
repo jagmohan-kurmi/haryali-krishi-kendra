@@ -1,4 +1,4 @@
-// Rajput Krishi Kendra PWA Service Worker
+﻿// Kisan Krishi Kendra PWA Service Worker
 const CACHE_NAME = 'rajpoot-krishi-v3';
 const STATIC_ASSETS = [
   '/',

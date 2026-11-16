@@ -1,4 +1,4 @@
-# Hariyali Krishi Kendra - Agriculture Retail & Farmer Invoicing
+﻿# Kisan Seva Krishi Kendra - Agriculture Retail & Farmer Invoicing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PWA Ready](https://img.shields.io/badge/PWA-Offline%20Ready-success)](sw.js)
@@ -15,7 +15,7 @@ Retail agro-dealers in rural farming hubs face:
 - Complex farmer credit management (Kisan Khata) during sowing seasons.
 - High costs and hardware requirements of desktop accounting software.
 
-**Hariyali Krishi Kendra** offers a zero-dependency, mobile-first web app that operates seamlessly offline and online.
+**Kisan Seva Krishi Kendra** offers a zero-dependency, mobile-first web app that operates seamlessly offline and online.
 
 ---
 
@@ -50,4 +50,4 @@ Open `http://localhost:8080` in your web browser.
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 - **Author & Maintainer:** Jagmohan Kurmi ([@jagmohan-kurmi](https://github.com/jagmohan-kurmi))
-- **Email:** 7509879289.jp@gmail.com
+- **Email:** 9876543210.jp@gmail.com

@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 /**
- * Rajput Krishi Sewa Kendra - PDF Sharing Backend API
+ * Kisan Krishi Sewa Kendra - PDF Sharing Backend API
  * Uploads generated invoice/challan/purchase PDF and generates shareable WhatsApp link
  */
 

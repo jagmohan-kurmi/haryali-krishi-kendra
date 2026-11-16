@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -6,7 +6,7 @@
     <meta http-equiv="Expires" content="0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>टैक्स इनवॉइस / बिल - हरियाली कृषि केंद्र पटेरा (Hariyali Krishi Kendra)</title>
+  <title>टैक्स इनवॉइस / बिल - किसान सेवा कृषि केंद्र (Kisan Seva Krishi Kendra)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -212,7 +212,7 @@
     <div style="display:flex; align-items:center; gap:10px;">
       <a href="admin.html" class="btn btn-primary" style="background:#065f46;">⬅️ स्टोर एडमिन ERP</a>
       <a href="index.html" class="btn btn-outline">🌐 मुख्य पोर्टल</a>
-      <span style="font-size:13px; color:var(--text-muted);">हरियाली कृषि केंद्र बिलिंग सॉफ्टवेयर v2.4</span>
+      <span style="font-size:13px; color:var(--text-muted);">किसान सेवा कृषि केंद्र बिलिंग सॉफ्टवेयर v2.4</span>
     </div>
     <div style="display:flex; gap:10px;">
       <button onclick="shareWhatsApp()" class="btn btn-whatsapp">📱 WhatsApp पर बिल भेजें</button>
@@ -227,9 +227,9 @@
       <div class="store-brand">
         <img src="assets/images/logo.jpg" alt="Logo" class="store-logo" onerror="this.style.display='none'">
         <div>
-          <div class="store-title">हरियाली कृषि केंद्र पटेरा</div>
-          <div class="store-tagline">Hariyali Krishi Agri Solutions • इफ्को खाद, प्रमाणित बीज, कीटनाशक एवं कृषि उपकरण विक्रेता</div>
-          <div class="store-gst">Patera, Madhya Pradesh 470772 • फोन: +91 62610 26021 • GSTIN: 23GEGPK9903G1ZF</div>
+          <div class="store-title">किसान सेवा कृषि केंद्र</div>
+          <div class="store-tagline">Kisan Seva Krishi Agri Solutions • इफ्को खाद, प्रमाणित बीज, कीटनाशक एवं कृषि उपकरण विक्रेता</div>
+          <div class="store-gst">Agro Market, Madhya Pradesh 470772 • फोन: +91 62610 26021 • GSTIN: 23GEGPK9903G1ZF</div>
         </div>
       </div>
       <div class="invoice-badge-box">
@@ -270,7 +270,7 @@
         </div>
         <div class="form-row">
           <label>गाँव / पता:</label>
-          <input type="text" id="farmerAddress" class="form-input" value="ग्राम-राजाबंदी, पटेरा" placeholder="गाँव या पता">
+          <input type="text" id="farmerAddress" class="form-input" value="ग्राम-राजाबंदी, कृषि मंडी" placeholder="गाँव या पता">
         </div>
       </div>
     </div>
@@ -391,7 +391,7 @@
       </div>
       <div class="signature-box">
         <img src="assets/images/signature.png" alt="Signature" class="sig-img" onerror="this.style.display='none'">
-        <div style="font-size:13px; font-weight:700; color:var(--primary);">हरियाली कृषि केंद्र</div>
+        <div style="font-size:13px; font-weight:700; color:var(--primary);">किसान सेवा कृषि केंद्र</div>
         <div style="font-size:11px; color:#64748b;">अधिकृत हस्ताक्षरकर्ता (Authorized Signatory)</div>
       </div>
     </div>
@@ -462,13 +462,13 @@
       const grandTotal = document.getElementById('lblGrandTotal').innerText;
       const mobile = document.getElementById('farmerMobile').value;
 
-      const text = `*हरियाली कृषि केंद्र पटेरा (Hariyali Krishi Kendra)*%0A` +
+      const text = `*किसान सेवा कृषि केंद्र (Kisan Seva Krishi Kendra)*%0A` +
         `*टैक्स इनवॉइस बिल क्रमांक:* ${invNum}%0A` +
         `*दिनांक:* ${date}%0A` +
         `*किसान का नाम:* ${farmer}%0A` +
         `*कुल बिल राशि:* ${grandTotal}%0A%0A` +
         `धन्यवाद! बेहतर उत्पाद, बेहतर फसल, बेहतर भविष्य🌾%0A` +
-        `दुकान: Patera, Madhya Pradesh 470772%0A` +
+        `दुकान: Agro Market, Madhya Pradesh 470772%0A` +
         `GSTIN: 23GEGPK9903G1ZF • हेल्पलाइन: +91 62610 26021%0A` +
         `गूगल प्रोफाइल: https://share.google/1FEpTYPZOABbz85Vl`;
 

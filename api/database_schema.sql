@@ -1,6 +1,6 @@
--- ============================================================================
+﻿-- ============================================================================
 -- HOSTINGER MYSQL / MARIADB DATABASE SCHEMA
--- PROJECT: Rajput Krishi Sewa Kendra ERP
+-- PROJECT: Kisan Krishi Sewa Kendra ERP
 -- FILE: hostinger/schema_hostinger_mysql.sql
 -- DESCRIPTION: Production-ready DDL for Hostinger MySQL/MariaDB environment
 -- ENGINE: InnoDB utf8mb4_unicode_ci
